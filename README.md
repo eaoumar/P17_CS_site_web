@@ -61,8 +61,8 @@ Ce tableau de bord permet de visualiser la **disponibilité des tranches nucléa
 
 ```bash
 # 1. Cloner le dépôt
-git clone git@github.com:Tinrenco/ancien_git_site_web.git
-cd ancien_git_site_web
+git clone https://github.com/eaoumar/P17_CS_site_web
+cd P17_CS_site_web
 
 # 2. Installer les dépendances Node
 npm install
