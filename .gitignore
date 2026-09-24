@@ -6,7 +6,6 @@ tmp/
 # Dependencies
 node_modules/
 
-package-lock.json
 
 # Large data files (partagés via Drive, générés par convert.py)
 export_ods.csv
