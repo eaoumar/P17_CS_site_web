@@ -3,7 +3,10 @@
   right: 0;
   top: 0;
   height: 100vh;
-  width: 480px;
+  // Le panneau hôte (.centrale-panel, 35 % de la largeur) est transformé : il sert
+  // de bloc conteneur à ce position: fixed. Une largeur fixe de 480 px débordait
+  // à gauche (contenu coupé) dès que le panneau mesurait moins de 480 px.
+  width: 100%;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.99));
   z-index: 1000;
   overflow-y: auto;
