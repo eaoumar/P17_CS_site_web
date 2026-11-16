@@ -26,7 +26,7 @@ import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angu
 import { Subscription } from 'rxjs';
 import { Dispo } from '../app.component.models';
 import { CommonModule } from '@angular/common';
-import { DatasetService } from '../srvices/dataset.service';
+import { CentraleInfos, DatasetService, FicheTranche, SourceInfo } from '../srvices/dataset.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { registerLocaleData } from '@angular/common';
@@ -79,6 +79,22 @@ export class CentraleComponent implements OnInit, OnDestroy {
   // Contrôle l'animation d'entrée/sortie du panneau.
   // false = panneau masqué (avant ouverture ou après fermeture).
   isVisible: boolean = false;
+
+  // ─── Fiche centrale (Groupe 1, assets/centrales_infos.json) ──────────────
+
+  // Fiche de la centrale affichée. null = pas encore chargée (rien n'est affiché,
+  // donc jamais de « 0 MW » pendant le chargement).
+  infos: CentraleInfos | null = null;
+
+  // Centrale à laquelle correspond `infos` (évite de recharger la fiche
+  // quand seules la date ou l'heure changent).
+  private infosCentrale = '';
+
+  // Section « Fiche de la centrale » dépliée ou repliée.
+  ficheOuverte = true;
+
+  // Année choisie dans la section « Arrêts » (null tant qu'aucune donnée).
+  anneeArrets: string | null = null;
 
   // Abonnements RxJS, annulés proprement dans ngOnDestroy.
   private subs = new Subscription();
@@ -181,6 +197,8 @@ export class CentraleComponent implements OnInit, OnDestroy {
   fetchAdditionalData(): void {
     if (!this.centraleName) return;
 
+    this.fetchInfos();
+
     this.datasetService.getSnapshotForDateTime(this.selectedDate, this.selectedHour)
     .subscribe({
       next: (data: any[]) => {
@@ -194,6 +212,105 @@ export class CentraleComponent implements OnInit, OnDestroy {
         this.additionalData = null;
       }
     });
+  }
+
+  // ─── Fiche centrale ──────────────────────────────────────────────────────
+
+  /** Charge la fiche (centrales_infos.json) si la centrale a changé. */
+  private fetchInfos(): void {
+    if (this.infosCentrale === this.centraleName) return;
+    const nom = this.centraleName;
+    this.infosCentrale = nom;
+    this.infos = null;
+    this.anneeArrets = null;
+
+    this.subs.add(this.datasetService.getCentraleInfos(nom).subscribe(infos => {
+      if (nom !== this.centraleName) return; // réponse d'une centrale précédente
+      this.infos = infos;
+      // Par défaut : dernière année complète (antérieure à l'année de génération du fichier),
+      // sinon la dernière année disponible.
+      const annees = this.anneesArrets();
+      const enCours = this.anneeEnCours();
+      const completes = enCours ? annees.filter(a => a < enCours) : annees;
+      this.anneeArrets = completes.length ? completes[completes.length - 1]
+                       : annees.length ? annees[annees.length - 1] : null;
+    }));
+  }
+
+  toggleFiche(): void {
+    this.ficheOuverte = !this.ficheOuverte;
+  }
+
+  /** Vrai si la valeur est connue (ni null, ni undefined, ni chaîne vide). */
+  estConnue(v: unknown): boolean {
+    return v !== null && v !== undefined && v !== '';
+  }
+
+  /** Commune, département, région de la centrale (identiques pour toutes ses tranches). */
+  localisation(): { commune: string | null; departement: string | null; region: string | null } {
+    const t = this.infos?.tranches.find(f => this.estConnue(f.commune)) ?? null;
+    return {
+      commune:     t?.commune ?? null,
+      departement: t?.departement ?? null,
+      region:      t?.region ?? null
+    };
+  }
+
+  /** Source du bloc « Détail par tranche » (même jeu EDF pour toutes les tranches). */
+  sourceTranches(): SourceInfo | null {
+    return this.infos?.tranches.find(t => t.sources.caracteristiques)?.sources.caracteristiques ?? null;
+  }
+
+  /** Source du bloc « Arrêts ». null tant que les indicateurs ne sont pas calculés. */
+  sourceArrets(): SourceInfo | null {
+    return this.infos?.tranches.find(t => t.sources.indicateurs)?.sources.indicateurs ?? null;
+  }
+
+  /** Années disponibles pour les indicateurs d'arrêts, triées. Vide tant que arrets_par_an est null. */
+  anneesArrets(): string[] {
+    const annees = new Set<string>();
+    for (const t of this.infos?.tranches ?? []) {
+      Object.keys(t.arrets_par_an ?? {}).forEach(a => annees.add(a));
+      Object.keys(t.jours_arret ?? {}).forEach(a => annees.add(a));
+    }
+    return [...annees].sort();
+  }
+
+  /** Année en cours au moment de la génération du fichier (ex. "2026"), null si inconnue. */
+  anneeEnCours(): string | null {
+    return this.infos?.meta?.genere_le?.substring(0, 4) ?? null;
+  }
+
+  /** Vrai si l'année choisie est l'année en cours (données partielles). */
+  anneePartielle(): boolean {
+    const enCours = this.anneeEnCours();
+    return !!enCours && this.anneeArrets === enCours;
+  }
+
+  /** Format court de date selon la langue (FR : JJ/MM/AAAA). */
+  formatDateCourt(): string {
+    return this.translate.currentLang === 'en' ? 'MMM d, y' : 'dd/MM/yyyy';
+  }
+
+  onAnneeArrets(event: Event): void {
+    this.anneeArrets = (event.target as HTMLSelectElement).value;
+  }
+
+  /** Nombre d'arrêts d'une tranche pour l'année choisie (null si inconnu). */
+  valeurAnnee(serie: FicheTranche['arrets_par_an'], annee: string | null): number | null {
+    if (!serie || !annee) return null;
+    return serie[annee] ?? null;
+  }
+
+  /** Jours d'arrêt d'un type pour l'année choisie (null si inconnu). */
+  joursAnnee(t: FicheTranche, annee: string | null, type: 'planned' | 'fortuitous' | 'total'): number | null {
+    if (!t.jours_arret || !annee) return null;
+    return t.jours_arret[annee]?.[type] ?? null;
+  }
+
+  /** Clé de suivi *ngFor des tranches de la fiche. */
+  trackTranche(_: number, t: FicheTranche): string {
+    return t.nom;
   }
 
   // ─── Fermeture du panneau ────────────────────────────────────────────────

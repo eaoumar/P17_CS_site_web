@@ -3,7 +3,10 @@
   right: 0;
   top: 0;
   height: 100vh;
-  width: 480px;
+  // Le panneau hôte (.centrale-panel, 35 % de la largeur) est transformé : il sert
+  // de bloc conteneur à ce position: fixed. Une largeur fixe de 480 px débordait
+  // à gauche (contenu coupé) dès que le panneau mesurait moins de 480 px.
+  width: 100%;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.99));
   z-index: 1000;
   overflow-y: auto;
@@ -224,6 +227,182 @@
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+// ─── Fiche de la centrale (Groupe 1) ─────────────────────────────────────────
+// Réutilise les couleurs, tailles et rayons déjà présents dans ce fichier.
+
+.fiche-centrale {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.fiche-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+
+  &:hover {
+    color: #3e4bff;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #3e4bff;
+    outline-offset: 4px;
+    border-radius: 4px;
+  }
+}
+
+.fiche-chevron {
+  transition: transform 0.2s ease;
+  transform: rotate(-90deg);
+
+  &.ouvert {
+    transform: rotate(0deg);
+  }
+}
+
+.fiche-contenu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fiche-bloc {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fiche-bloc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fiche-bloc-titre {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a237e;
+  margin: 0;
+}
+
+.fiche-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+}
+
+.fiche-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  font-size: 14px;
+
+  dt {
+    color: #666;
+    font-weight: 500;
+  }
+
+  dd {
+    margin: 0;
+    color: #2c3e50;
+    font-weight: 600;
+    text-align: right;
+  }
+}
+
+// Carte de tranche de la fiche : même apparence que .tranche-item, mais non cliquable.
+.tranche-item.fiche-tranche {
+  cursor: default;
+
+  &:hover {
+    transform: none;
+    box-shadow: 0 2px 8px rgba(62, 75, 255, 0.06);
+    border-color: #f0f2ff;
+
+    .tranche-name {
+      color: #2c3e50;
+    }
+
+    .power-value {
+      color: #3e4bff;
+    }
+  }
+}
+
+.fiche-nd {
+  color: #666;
+  font-weight: 500;
+  font-style: italic;
+  margin: 0;
+}
+
+.fiche-annee {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+
+  select {
+    font: inherit;
+    color: #3e4bff;
+    background: #f8f9ff;
+    border: 1px solid #e8eaff;
+    border-radius: 8px;
+    padding: 4px 10px;
+
+    &:disabled {
+      color: #666;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.fiche-partiel {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: #3e4bff;
+}
+
+.fiche-methode {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.fiche-source {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+
+  a {
+    color: #3e4bff;
+    font-weight: 500;
+    text-decoration: underline;
+
+    &:hover {
+      color: #1a237e;
+    }
   }
 }
 
