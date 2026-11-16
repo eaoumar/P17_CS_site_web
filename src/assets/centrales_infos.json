@@ -1,0 +1,1256 @@
+{
+  "BELLEVILLE 1": {
+    "centrale": "BELLEVILLE",
+    "puissance_installee_mw": 1310,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1988-06-01",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Belleville-sur-Loire",
+    "departement": "CHER",
+    "region": "CENTRE-VAL DE LOIRE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "BELLEVILLE 2": {
+    "centrale": "BELLEVILLE",
+    "puissance_installee_mw": 1310,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1989-01-01",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Belleville-sur-Loire",
+    "departement": "CHER",
+    "region": "CENTRE-VAL DE LOIRE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "BLAYAIS 1": {
+    "centrale": "BLAYAIS",
+    "puissance_installee_mw": 910,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1981-12-01",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Braud-et-Saint-Louis",
+    "departement": "GIRONDE",
+    "region": "NOUVELLE-AQUITAINE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "BLAYAIS 2": {
+    "centrale": "BLAYAIS",
+    "puissance_installee_mw": 942,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1983-02-01",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Braud-et-Saint-Louis",
+    "departement": "GIRONDE",
+    "region": "NOUVELLE-AQUITAINE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "BLAYAIS 3": {
+    "centrale": "BLAYAIS",
+    "puissance_installee_mw": 942,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1983-11-14",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Braud-et-Saint-Louis",
+    "departement": "GIRONDE",
+    "region": "NOUVELLE-AQUITAINE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "BLAYAIS 4": {
+    "centrale": "BLAYAIS",
+    "puissance_installee_mw": 910,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1983-10-01",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Braud-et-Saint-Louis",
+    "departement": "GIRONDE",
+    "region": "NOUVELLE-AQUITAINE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "BUGEY 2": {
+    "centrale": "BUGEY",
+    "puissance_installee_mw": 910,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1979-03-01",
+    "reserve_secondaire_max_mw": 25,
+    "palier": "REP 900",
+    "commune": "Saint-Vulbas",
+    "departement": "AIN",
+    "region": "AUVERGNE-RHONE-ALPES",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "BUGEY 3": {
+    "centrale": "BUGEY",
+    "puissance_installee_mw": 910,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1979-03-01",
+    "reserve_secondaire_max_mw": 25,
+    "palier": "REP 900",
+    "commune": "Saint-Vulbas",
+    "departement": "AIN",
+    "region": "AUVERGNE-RHONE-ALPES",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "BUGEY 4": {
+    "centrale": "BUGEY",
+    "puissance_installee_mw": 880,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1979-07-01",
+    "reserve_secondaire_max_mw": 25,
+    "palier": "REP 900",
+    "commune": "Saint-Vulbas",
+    "departement": "AIN",
+    "region": "AUVERGNE-RHONE-ALPES",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "BUGEY 5": {
+    "centrale": "BUGEY",
+    "puissance_installee_mw": 880,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1980-01-03",
+    "reserve_secondaire_max_mw": 25,
+    "palier": "REP 900",
+    "commune": "Saint-Vulbas",
+    "departement": "AIN",
+    "region": "AUVERGNE-RHONE-ALPES",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "CATTENOM 1": {
+    "centrale": "CATTENOM",
+    "puissance_installee_mw": 1300,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1987-04-01",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Cattenom",
+    "departement": "MOSELLE",
+    "region": "GRAND EST",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "CATTENOM 2": {
+    "centrale": "CATTENOM",
+    "puissance_installee_mw": 1300,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1988-02-01",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Cattenom",
+    "departement": "MOSELLE",
+    "region": "GRAND EST",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "CATTENOM 3": {
+    "centrale": "CATTENOM",
+    "puissance_installee_mw": 1300,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1991-02-01",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Cattenom",
+    "departement": "MOSELLE",
+    "region": "GRAND EST",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "CATTENOM 4": {
+    "centrale": "CATTENOM",
+    "puissance_installee_mw": 1300,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1992-01-01",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Cattenom",
+    "departement": "MOSELLE",
+    "region": "GRAND EST",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "CHINON 1": {
+    "centrale": "CHINON",
+    "puissance_installee_mw": 905,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1984-02-01",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Avoine",
+    "departement": "INDRE-ET-LOIRE",
+    "region": "CENTRE-VAL DE LOIRE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "CHINON 2": {
+    "centrale": "CHINON",
+    "puissance_installee_mw": 905,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1984-08-01",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Avoine",
+    "departement": "INDRE-ET-LOIRE",
+    "region": "CENTRE-VAL DE LOIRE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "CHINON 3": {
+    "centrale": "CHINON",
+    "puissance_installee_mw": 905,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1987-03-04",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Avoine",
+    "departement": "INDRE-ET-LOIRE",
+    "region": "CENTRE-VAL DE LOIRE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "CHINON 4": {
+    "centrale": "CHINON",
+    "puissance_installee_mw": 905,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1988-04-01",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Avoine",
+    "departement": "INDRE-ET-LOIRE",
+    "region": "CENTRE-VAL DE LOIRE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "CHOOZ 1": {
+    "centrale": "CHOOZ",
+    "puissance_installee_mw": 1500,
+    "puissance_min_conception_mw": 370,
+    "date_mise_en_service": "2000-05-15",
+    "reserve_secondaire_max_mw": 30,
+    "palier": "REP 1450",
+    "commune": "Chooz",
+    "departement": "ARDENNES",
+    "region": "GRAND EST",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "CHOOZ 2": {
+    "centrale": "CHOOZ",
+    "puissance_installee_mw": 1500,
+    "puissance_min_conception_mw": 370,
+    "date_mise_en_service": "2000-09-29",
+    "reserve_secondaire_max_mw": 30,
+    "palier": "REP 1450",
+    "commune": "Chooz",
+    "departement": "ARDENNES",
+    "region": "GRAND EST",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "CIVAUX 1": {
+    "centrale": "CIVAUX",
+    "puissance_installee_mw": 1495,
+    "puissance_min_conception_mw": 370,
+    "date_mise_en_service": "2002-01-29",
+    "reserve_secondaire_max_mw": 30,
+    "palier": "REP 1450",
+    "commune": "Civaux",
+    "departement": "VIENNE",
+    "region": "NOUVELLE-AQUITAINE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "CIVAUX 2": {
+    "centrale": "CIVAUX",
+    "puissance_installee_mw": 1495,
+    "puissance_min_conception_mw": 370,
+    "date_mise_en_service": "2002-04-23",
+    "reserve_secondaire_max_mw": 30,
+    "palier": "REP 1450",
+    "commune": "Civaux",
+    "departement": "VIENNE",
+    "region": "NOUVELLE-AQUITAINE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "CRUAS 1": {
+    "centrale": "CRUAS",
+    "puissance_installee_mw": 915,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1984-04-02",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Cruas",
+    "departement": "ARDECHE",
+    "region": "AUVERGNE-RHONE-ALPES",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "CRUAS 2": {
+    "centrale": "CRUAS",
+    "puissance_installee_mw": 915,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1985-04-01",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Cruas",
+    "departement": "ARDECHE",
+    "region": "AUVERGNE-RHONE-ALPES",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "CRUAS 3": {
+    "centrale": "CRUAS",
+    "puissance_installee_mw": 915,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1984-09-10",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Cruas",
+    "departement": "ARDECHE",
+    "region": "AUVERGNE-RHONE-ALPES",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "CRUAS 4": {
+    "centrale": "CRUAS",
+    "puissance_installee_mw": 915,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1985-02-11",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Cruas",
+    "departement": "ARDECHE",
+    "region": "AUVERGNE-RHONE-ALPES",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "DAMPIERRE 1": {
+    "centrale": "DAMPIERRE",
+    "puissance_installee_mw": 890,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1980-09-10",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Dampierre-en-Burly",
+    "departement": "LOIRET",
+    "region": "CENTRE-VAL DE LOIRE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "DAMPIERRE 2": {
+    "centrale": "DAMPIERRE",
+    "puissance_installee_mw": 922,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1981-02-16",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Dampierre-en-Burly",
+    "departement": "LOIRET",
+    "region": "CENTRE-VAL DE LOIRE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "DAMPIERRE 3": {
+    "centrale": "DAMPIERRE",
+    "puissance_installee_mw": 922,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1981-05-27",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Dampierre-en-Burly",
+    "departement": "LOIRET",
+    "region": "CENTRE-VAL DE LOIRE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "DAMPIERRE 4": {
+    "centrale": "DAMPIERRE",
+    "puissance_installee_mw": 890,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1981-11-20",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Dampierre-en-Burly",
+    "departement": "LOIRET",
+    "region": "CENTRE-VAL DE LOIRE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "FESSENHEIM 1": {
+    "centrale": "FESSENHEIM",
+    "puissance_installee_mw": null,
+    "puissance_min_conception_mw": null,
+    "date_mise_en_service": null,
+    "reserve_secondaire_max_mw": null,
+    "palier": null,
+    "commune": null,
+    "departement": null,
+    "region": null,
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": null,
+      "indicateurs": null
+    }
+  },
+  "FESSENHEIM 2": {
+    "centrale": "FESSENHEIM",
+    "puissance_installee_mw": null,
+    "puissance_min_conception_mw": null,
+    "date_mise_en_service": null,
+    "reserve_secondaire_max_mw": null,
+    "palier": null,
+    "commune": null,
+    "departement": null,
+    "region": null,
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": null,
+      "indicateurs": null
+    }
+  },
+  "FLAMANVILLE 1": {
+    "centrale": "FLAMANVILLE",
+    "puissance_installee_mw": 1330,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1986-12-01",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Flamanville",
+    "departement": "MANCHE",
+    "region": "NORMANDIE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "FLAMANVILLE 2": {
+    "centrale": "FLAMANVILLE",
+    "puissance_installee_mw": 1330,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1987-03-09",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Flamanville",
+    "departement": "MANCHE",
+    "region": "NORMANDIE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "FLAMANVILLE 3": {
+    "centrale": "FLAMANVILLE",
+    "puissance_installee_mw": 1600,
+    "puissance_min_conception_mw": null,
+    "date_mise_en_service": "2026-04-26",
+    "reserve_secondaire_max_mw": null,
+    "palier": "REP 1600",
+    "commune": "Flamanville",
+    "departement": "MANCHE",
+    "region": "NORMANDIE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "GOLFECH 1": {
+    "centrale": "GOLFECH",
+    "puissance_installee_mw": 1310,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1991-02-01",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Golfech",
+    "departement": "TARN-ET-GARONNE",
+    "region": "OCCITANIE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "GOLFECH 2": {
+    "centrale": "GOLFECH",
+    "puissance_installee_mw": 1310,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1994-03-04",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Golfech",
+    "departement": "TARN-ET-GARONNE",
+    "region": "OCCITANIE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "GRAVELINES 1": {
+    "centrale": "GRAVELINES",
+    "puissance_installee_mw": 910,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1980-11-25",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Gravelines",
+    "departement": "NORD",
+    "region": "HAUTS-DE-FRANCE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "GRAVELINES 2": {
+    "centrale": "GRAVELINES",
+    "puissance_installee_mw": 910,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1980-12-01",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Gravelines",
+    "departement": "NORD",
+    "region": "HAUTS-DE-FRANCE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "GRAVELINES 3": {
+    "centrale": "GRAVELINES",
+    "puissance_installee_mw": 910,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1981-06-01",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Gravelines",
+    "departement": "NORD",
+    "region": "HAUTS-DE-FRANCE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "GRAVELINES 4": {
+    "centrale": "GRAVELINES",
+    "puissance_installee_mw": 942,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1981-10-01",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Gravelines",
+    "departement": "NORD",
+    "region": "HAUTS-DE-FRANCE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "GRAVELINES 5": {
+    "centrale": "GRAVELINES",
+    "puissance_installee_mw": 910,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1985-01-15",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Gravelines",
+    "departement": "NORD",
+    "region": "HAUTS-DE-FRANCE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "GRAVELINES 6": {
+    "centrale": "GRAVELINES",
+    "puissance_installee_mw": 938,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1985-10-25",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Gravelines",
+    "departement": "NORD",
+    "region": "HAUTS-DE-FRANCE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "NOGENT 1": {
+    "centrale": "NOGENT",
+    "puissance_installee_mw": 1310,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1988-02-24",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Nogent-sur-Seine",
+    "departement": "AUBE",
+    "region": "GRAND EST",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "NOGENT 2": {
+    "centrale": "NOGENT",
+    "puissance_installee_mw": 1310,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1989-05-01",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Nogent-sur-Seine",
+    "departement": "AUBE",
+    "region": "GRAND EST",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "PALUEL 1": {
+    "centrale": "PALUEL",
+    "puissance_installee_mw": 1330,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1985-12-01",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Paluel",
+    "departement": "SEINE-MARITIME",
+    "region": "NORMANDIE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "PALUEL 2": {
+    "centrale": "PALUEL",
+    "puissance_installee_mw": 1330,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1985-12-01",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Paluel",
+    "departement": "SEINE-MARITIME",
+    "region": "NORMANDIE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "PALUEL 3": {
+    "centrale": "PALUEL",
+    "puissance_installee_mw": 1330,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1986-02-01",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Paluel",
+    "departement": "SEINE-MARITIME",
+    "region": "NORMANDIE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "PALUEL 4": {
+    "centrale": "PALUEL",
+    "puissance_installee_mw": 1330,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1986-06-01",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Paluel",
+    "departement": "SEINE-MARITIME",
+    "region": "NORMANDIE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "PENLY 1": {
+    "centrale": "PENLY",
+    "puissance_installee_mw": 1330,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1990-12-01",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Petit-Caux",
+    "departement": "SEINE-MARITIME",
+    "region": "NORMANDIE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "PENLY 2": {
+    "centrale": "PENLY",
+    "puissance_installee_mw": 1330,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1992-11-01",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Petit-Caux",
+    "departement": "SEINE-MARITIME",
+    "region": "NORMANDIE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "ST ALBAN 1": {
+    "centrale": "ST ALBAN",
+    "puissance_installee_mw": 1335,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1986-05-01",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Saint-Maurice-l'Exil",
+    "departement": "ISERE",
+    "region": "AUVERGNE-RHONE-ALPES",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "ST ALBAN 2": {
+    "centrale": "ST ALBAN",
+    "puissance_installee_mw": 1335,
+    "puissance_min_conception_mw": 260,
+    "date_mise_en_service": "1987-03-01",
+    "reserve_secondaire_max_mw": 60,
+    "palier": "REP 1300",
+    "commune": "Saint-Maurice-l'Exil",
+    "departement": "ISERE",
+    "region": "AUVERGNE-RHONE-ALPES",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "ST LAURENT 1": {
+    "centrale": "ST LAURENT",
+    "puissance_installee_mw": 915,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1983-08-01",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Saint-Laurent-Nouan",
+    "departement": "LOIR-ET-CHER",
+    "region": "CENTRE-VAL DE LOIRE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "ST LAURENT 2": {
+    "centrale": "ST LAURENT",
+    "puissance_installee_mw": 915,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1983-08-01",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Saint-Laurent-Nouan",
+    "departement": "LOIR-ET-CHER",
+    "region": "CENTRE-VAL DE LOIRE",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "TRICASTIN 1": {
+    "centrale": "TRICASTIN",
+    "puissance_installee_mw": 915,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1980-12-01",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Saint-Paul-Trois-Châteaux",
+    "departement": "DROME",
+    "region": "AUVERGNE-RHONE-ALPES",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "TRICASTIN 2": {
+    "centrale": "TRICASTIN",
+    "puissance_installee_mw": 947,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1980-12-01",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Saint-Paul-Trois-Châteaux",
+    "departement": "DROME",
+    "region": "AUVERGNE-RHONE-ALPES",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "TRICASTIN 3": {
+    "centrale": "TRICASTIN",
+    "puissance_installee_mw": 944,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1981-05-11",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Saint-Paul-Trois-Châteaux",
+    "departement": "DROME",
+    "region": "AUVERGNE-RHONE-ALPES",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "TRICASTIN 4": {
+    "centrale": "TRICASTIN",
+    "puissance_installee_mw": 947,
+    "puissance_min_conception_mw": 180,
+    "date_mise_en_service": "1981-11-01",
+    "reserve_secondaire_max_mw": 40,
+    "palier": "REP 900",
+    "commune": "Saint-Paul-Trois-Châteaux",
+    "departement": "DROME",
+    "region": "AUVERGNE-RHONE-ALPES",
+    "co2_t_par_an": null,
+    "arrets_par_an": null,
+    "jours_arret": null,
+    "sources": {
+      "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "indicateurs": null
+    }
+  },
+  "_centrales": {
+    "BELLEVILLE": {
+      "nb_tranches": 2,
+      "puissance_installee_mw": 2620,
+      "premiere_mise_en_service": "1988-06-01",
+      "reserve_secondaire_max_mw": 120,
+      "sources": {
+        "nb_tranches": "src/assets/units.json",
+        "caracteristiques": "Calculé à partir de : OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16"
+      }
+    },
+    "BLAYAIS": {
+      "nb_tranches": 4,
+      "puissance_installee_mw": 3704,
+      "premiere_mise_en_service": "1981-12-01",
+      "reserve_secondaire_max_mw": 160,
+      "sources": {
+        "nb_tranches": "src/assets/units.json",
+        "caracteristiques": "Calculé à partir de : OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16"
+      }
+    },
+    "BUGEY": {
+      "nb_tranches": 4,
+      "puissance_installee_mw": 3580,
+      "premiere_mise_en_service": "1979-03-01",
+      "reserve_secondaire_max_mw": 100,
+      "sources": {
+        "nb_tranches": "src/assets/units.json",
+        "caracteristiques": "Calculé à partir de : OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16"
+      }
+    },
+    "CATTENOM": {
+      "nb_tranches": 4,
+      "puissance_installee_mw": 5200,
+      "premiere_mise_en_service": "1987-04-01",
+      "reserve_secondaire_max_mw": 240,
+      "sources": {
+        "nb_tranches": "src/assets/units.json",
+        "caracteristiques": "Calculé à partir de : OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16"
+      }
+    },
+    "CHINON": {
+      "nb_tranches": 4,
+      "puissance_installee_mw": 3620,
+      "premiere_mise_en_service": "1984-02-01",
+      "reserve_secondaire_max_mw": 160,
+      "sources": {
+        "nb_tranches": "src/assets/units.json",
+        "caracteristiques": "Calculé à partir de : OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16"
+      }
+    },
+    "CHOOZ": {
+      "nb_tranches": 2,
+      "puissance_installee_mw": 3000,
+      "premiere_mise_en_service": "2000-05-15",
+      "reserve_secondaire_max_mw": 60,
+      "sources": {
+        "nb_tranches": "src/assets/units.json",
+        "caracteristiques": "Calculé à partir de : OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16"
+      }
+    },
+    "CIVAUX": {
+      "nb_tranches": 2,
+      "puissance_installee_mw": 2990,
+      "premiere_mise_en_service": "2002-01-29",
+      "reserve_secondaire_max_mw": 60,
+      "sources": {
+        "nb_tranches": "src/assets/units.json",
+        "caracteristiques": "Calculé à partir de : OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16"
+      }
+    },
+    "CRUAS": {
+      "nb_tranches": 4,
+      "puissance_installee_mw": 3660,
+      "premiere_mise_en_service": "1984-04-02",
+      "reserve_secondaire_max_mw": 160,
+      "sources": {
+        "nb_tranches": "src/assets/units.json",
+        "caracteristiques": "Calculé à partir de : OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16"
+      }
+    },
+    "DAMPIERRE": {
+      "nb_tranches": 4,
+      "puissance_installee_mw": 3624,
+      "premiere_mise_en_service": "1980-09-10",
+      "reserve_secondaire_max_mw": 160,
+      "sources": {
+        "nb_tranches": "src/assets/units.json",
+        "caracteristiques": "Calculé à partir de : OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16"
+      }
+    },
+    "FESSENHEIM": {
+      "nb_tranches": 2,
+      "puissance_installee_mw": null,
+      "premiere_mise_en_service": null,
+      "reserve_secondaire_max_mw": null,
+      "sources": {
+        "nb_tranches": "src/assets/units.json",
+        "caracteristiques": null
+      }
+    },
+    "FLAMANVILLE": {
+      "nb_tranches": 3,
+      "puissance_installee_mw": 4260,
+      "premiere_mise_en_service": "1986-12-01",
+      "reserve_secondaire_max_mw": null,
+      "sources": {
+        "nb_tranches": "src/assets/units.json",
+        "caracteristiques": "Calculé à partir de : OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16"
+      }
+    },
+    "GOLFECH": {
+      "nb_tranches": 2,
+      "puissance_installee_mw": 2620,
+      "premiere_mise_en_service": "1991-02-01",
+      "reserve_secondaire_max_mw": 120,
+      "sources": {
+        "nb_tranches": "src/assets/units.json",
+        "caracteristiques": "Calculé à partir de : OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16"
+      }
+    },
+    "GRAVELINES": {
+      "nb_tranches": 6,
+      "puissance_installee_mw": 5520,
+      "premiere_mise_en_service": "1980-11-25",
+      "reserve_secondaire_max_mw": 240,
+      "sources": {
+        "nb_tranches": "src/assets/units.json",
+        "caracteristiques": "Calculé à partir de : OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16"
+      }
+    },
+    "NOGENT": {
+      "nb_tranches": 2,
+      "puissance_installee_mw": 2620,
+      "premiere_mise_en_service": "1988-02-24",
+      "reserve_secondaire_max_mw": 120,
+      "sources": {
+        "nb_tranches": "src/assets/units.json",
+        "caracteristiques": "Calculé à partir de : OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16"
+      }
+    },
+    "PALUEL": {
+      "nb_tranches": 4,
+      "puissance_installee_mw": 5320,
+      "premiere_mise_en_service": "1985-12-01",
+      "reserve_secondaire_max_mw": 240,
+      "sources": {
+        "nb_tranches": "src/assets/units.json",
+        "caracteristiques": "Calculé à partir de : OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16"
+      }
+    },
+    "PENLY": {
+      "nb_tranches": 2,
+      "puissance_installee_mw": 2660,
+      "premiere_mise_en_service": "1990-12-01",
+      "reserve_secondaire_max_mw": 120,
+      "sources": {
+        "nb_tranches": "src/assets/units.json",
+        "caracteristiques": "Calculé à partir de : OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16"
+      }
+    },
+    "ST ALBAN": {
+      "nb_tranches": 2,
+      "puissance_installee_mw": 2670,
+      "premiere_mise_en_service": "1986-05-01",
+      "reserve_secondaire_max_mw": 120,
+      "sources": {
+        "nb_tranches": "src/assets/units.json",
+        "caracteristiques": "Calculé à partir de : OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16"
+      }
+    },
+    "ST LAURENT": {
+      "nb_tranches": 2,
+      "puissance_installee_mw": 1830,
+      "premiere_mise_en_service": "1983-08-01",
+      "reserve_secondaire_max_mw": 80,
+      "sources": {
+        "nb_tranches": "src/assets/units.json",
+        "caracteristiques": "Calculé à partir de : OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16"
+      }
+    },
+    "TRICASTIN": {
+      "nb_tranches": 4,
+      "puissance_installee_mw": 3753,
+      "premiere_mise_en_service": "1980-12-01",
+      "reserve_secondaire_max_mw": 160,
+      "sources": {
+        "nb_tranches": "src/assets/units.json",
+        "caracteristiques": "Calculé à partir de : OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16"
+      }
+    }
+  }
+}
