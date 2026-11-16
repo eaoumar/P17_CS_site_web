@@ -18,7 +18,7 @@ import sys
 import unicodedata
 from pathlib import Path
 
-from sources_edf import SourceIndisponible, get_caracteristiques_centrales
+from sources_edf import SourceIndisponible, get_caracteristiques_centrales, get_outages
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -81,9 +81,22 @@ def construire_correspondance():
             raise ValueError(f"Deux tranches EDF ont le même nom normalisé : {cle}")
         index_edf[cle] = nom
 
+    # Noms de l'API indisponibilités (unit_name), si la source est accessible.
+    try:
+        import contextlib, io
+        with contextlib.redirect_stdout(io.StringIO()):
+            outages, _ = get_outages()
+        noms_api = set(outages["unit_name"])
+        index_api = {normaliser(n): n for n in noms_api}
+    except (NotImplementedError, SourceIndisponible) as exc:
+        print(f"AVERTISSEMENT : noms de l'API indisponibilités non vérifiés ({exc}) ; "
+              "unit_name_api_indispo = nom_units_json (provisoire).")
+        noms_api, index_api = None, {}
+
     lignes = []
     utilises = set()
     non_rapproches_units = []
+    api_non_trouves = []
 
     for u in units:
         nom_u = u["unit"]
@@ -102,16 +115,29 @@ def construire_correspondance():
         else:
             non_rapproches_units.append(nom_u)
 
+        if noms_api is None:
+            nom_api = nom_u  # provisoire, non vérifié
+        elif nom_u in noms_api:
+            nom_api = nom_u
+        else:
+            nom_api = index_api.get(normaliser(nom_u), "")
+            if not nom_api:
+                api_non_trouves.append(nom_u)
+
         lignes.append({
             "centrale": u["centrale"],
             "tranche": nom_u,
             "nom_units_json": nom_u,
             "nom_edf_opendata": nom_edf,
-            # Provisoire : units.json est construit depuis l'API indisponibilités
-            # (champ unit_name) par convert.py. À vérifier avec le token.
-            "unit_name_api_indispo": nom_u,
+            "unit_name_api_indispo": nom_api,
             "nom_rte_production": "",  # à remplir avec le Groupe 2
         })
+
+    if noms_api is not None:
+        exacts = sum(1 for l in lignes if l["unit_name_api_indispo"] == l["nom_units_json"])
+        en_trop = sorted(noms_api - {l["unit_name_api_indispo"] for l in lignes})
+        print(f"API indisponibilités : {len(noms_api)} unit_name ; identiques à units.json : {exacts}/{len(lignes)} ; "
+              f"absents de l'API : {api_non_trouves or 'aucun'} ; présents dans l'API seulement : {en_trop or 'aucun'}")
 
     non_rapproches_edf = [n for n in noms_edf if n not in utilises]
     return lignes, non_rapproches_units, non_rapproches_edf

@@ -152,17 +152,27 @@
               </select>
             </label>
           </div>
+          <p class="fiche-partiel" *ngIf="anneePartielle() && infos.meta?.derniere_publication">
+            {{ 'CENTRALE.FICHE.PARTIAL_DATA' | translate:{ date: (infos.meta?.derniere_publication | date:formatDateCourt():undefined:translate.currentLang) } }}
+          </p>
           <dl class="fiche-grid" *ngIf="anneesArrets().length; else ndBloc">
             <div class="fiche-row" *ngFor="let t of infos.tranches; trackBy: trackTranche">
               <dt>{{ t.nom }}</dt>
               <dd>
-                <ng-container *ngTemplateOutlet="nombre; context: { $implicit: valeurAnnee(t.arrets_par_an, anneeArrets) }"></ng-container>
-                {{ 'CENTRALE.FICHE.OUTAGES_COUNT' | translate }} ·
-                <ng-container *ngTemplateOutlet="nombre; context: { $implicit: valeurAnnee(t.jours_arret, anneeArrets) }"></ng-container>
-                {{ 'CENTRALE.FICHE.DAYS' | translate }}
+                <ng-container *ngIf="estConnue(valeurAnnee(t.arrets_par_an, anneeArrets)); else nd">
+                  {{ valeurAnnee(t.arrets_par_an, anneeArrets) | number:'1.0-0':translate.currentLang }}
+                  {{ 'CENTRALE.FICHE.OUTAGES_COUNT' | translate }} ·
+                  {{ 'CENTRALE.FICHE.PLANNED_DAYS' | translate }}
+                  <ng-container *ngTemplateOutlet="jours; context: { $implicit: joursAnnee(t, anneeArrets, 'planned') }"></ng-container>
+                  {{ 'CENTRALE.FICHE.DAY_UNIT' | translate }} ·
+                  {{ 'CENTRALE.FICHE.FORCED_DAYS' | translate }}
+                  <ng-container *ngTemplateOutlet="jours; context: { $implicit: joursAnnee(t, anneeArrets, 'fortuitous') }"></ng-container>
+                  {{ 'CENTRALE.FICHE.DAY_UNIT' | translate }}
+                </ng-container>
               </dd>
             </div>
           </dl>
+          <p class="fiche-methode">{{ 'CENTRALE.FICHE.OUTAGES_METHOD' | translate }}</p>
           <ng-container *ngTemplateOutlet="source; context: { $implicit: sourceArrets() }"></ng-container>
         </div>
       </div>
@@ -177,6 +187,9 @@
     </ng-template>
     <ng-template #nombre let-v>
       <ng-container *ngIf="estConnue(v); else nd">{{ v | number:'1.0-0':translate.currentLang }}</ng-container>
+    </ng-template>
+    <ng-template #jours let-v>
+      <ng-container *ngIf="estConnue(v); else nd">{{ v | number:'1.0-1':translate.currentLang }}</ng-container>
     </ng-template>
     <ng-template #dateVal let-v>
       <ng-container *ngIf="estConnue(v); else nd">{{ v | date:'longDate':undefined:translate.currentLang }}</ng-container>

@@ -4,7 +4,7 @@ Script de conversion des données d'indisponibilité nucléaire.
 Source des données (par ordre de priorité) :
   1. API EDF Open Data  — si un token est trouvé dans api_config.json
                           ou la variable d'environnement EDF_API_TOKEN.
-  2. CSV local          — fichier indisponibilites_nucleaire_final.csv
+  2. CSV local          — fichier donnees_edf.csv
                           (fallback si l'API est indisponible ou sans token).
 
 Sorties : deux fichiers JSON au format attendu par l'application Angular :
@@ -137,11 +137,11 @@ def get_api_token():
         return None
 
 
-def load_outages_from_api(api_token):
+def fetch_outages_raw(api_token):
     """
-    Récupère toutes les indisponibilités nucléaires depuis l'API EDF.
+    Télécharge tous les enregistrements bruts du dataset d'indisponibilités
+    (tous les champs, toutes les versions, sans filtrage).
     Pagination par curseur _i, header x-apiKey.
-    Retourne (outages, units_info) dans le même format que load_outages().
     """
     all_records = []
     after       = None
@@ -167,6 +167,16 @@ def load_outages_from_api(api_token):
             break
 
         after = results[-1].get("_i")
+
+    return all_records
+
+
+def load_outages_from_api(api_token):
+    """
+    Récupère toutes les indisponibilités nucléaires depuis l'API EDF.
+    Retourne (outages, units_info) dans le même format que load_outages().
+    """
+    all_records = fetch_outages_raw(api_token)
 
     # Déduplication : on garde la version la plus récente par publication_id
     best = {}
@@ -390,7 +400,7 @@ def main():
     write_json(main_recs, output_main)
     print(f"  OK — {len(main_recs):,} enregistrements")
 
-    # 4. :.json — événements bruts pour calcul côté navigateur
+    # 4. events.json — événements bruts pour calcul côté navigateur
     events_export = [
         {'u': o['unit'],
          'b': o['begin'].strftime('%Y-%m-%dT%H:%M:%S'),
