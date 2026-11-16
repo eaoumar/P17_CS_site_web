@@ -28,3 +28,7 @@ api_config.json
 .DS_Store
 Thumbs.db
 .vercel
+
+# Cache des téléchargements du Groupe 1
+data_groupe1/cache/
+data_groupe1/__pycache__/
