@@ -38,6 +38,21 @@ export interface SourceInfo {
 /** Indicateur annuel : { "2024": 3, ... }. null tant que non calculé. */
 export type ParAnnee = Record<string, number | null> | null;
 
+/** Jours d'arrêt d'une année, par type (planned + fortuitous = total). */
+export interface JoursArret {
+  planned: number | null;
+  fortuitous: number | null;
+  total: number | null;
+}
+
+/** Arrêt publié à venir. */
+export interface ArretFutur {
+  type: 'planned' | 'fortuitous';
+  debut: string;
+  fin: string;
+  jours: number;
+}
+
 export interface FicheTranche {
   nom: string;          // nom du réacteur (identique à units.json)
   centrale: string;
@@ -51,7 +66,9 @@ export interface FicheTranche {
   region: string | null;
   co2_t_par_an: number | null;
   arrets_par_an: ParAnnee;
-  jours_arret: ParAnnee;
+  jours_arret: Record<string, JoursArret | null> | null;
+  planifie_futur: ArretFutur[] | null;
+  arret_definitif: string | null;
   sources: { caracteristiques: SourceInfo | null; indicateurs: SourceInfo | null };
 }
 
@@ -63,9 +80,16 @@ export interface ResumeCentrale {
   sources: { nb_tranches: string | null; caracteristiques: SourceInfo | null };
 }
 
+/** Métadonnées du fichier (clé _meta). */
+export interface MetaInfos {
+  derniere_publication: string | null;  // dernière publication de l'API indisponibilités (AAAA-MM-JJ)
+  genere_le: string | null;             // date de génération du fichier (ISO)
+}
+
 export interface CentraleInfos {
   resume: ResumeCentrale | null;   // null si la centrale est absente du fichier
   tranches: FicheTranche[];
+  meta: MetaInfos | null;
 }
 
 // @Injectable({ providedIn: 'root' }) : Angular instancie ce service
@@ -493,7 +517,7 @@ export class DatasetService {
           : null;
 
         const tranches: FicheTranche[] = Object.entries(infos ?? {})
-          .filter(([nom, f]: [string, any]) => nom !== '_centrales' && f?.centrale === nomCentrale)
+          .filter(([nom, f]: [string, any]) => !nom.startsWith('_') && f?.centrale === nomCentrale)
           .map(([nom, f]: [string, any]) => ({
             ...f,
             nom,
@@ -504,7 +528,12 @@ export class DatasetService {
           }))
           .sort((a, b) => a.nom.localeCompare(b.nom, 'fr', { numeric: true }));
 
-        return { resume, tranches };
+        const m = infos?.['_meta'];
+        const meta: MetaInfos | null = m
+          ? { derniere_publication: m.derniere_publication ?? null, genere_le: m.genere_le ?? null }
+          : null;
+
+        return { resume, tranches, meta };
       })
     );
   }

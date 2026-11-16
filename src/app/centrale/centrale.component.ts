@@ -227,8 +227,13 @@ export class CentraleComponent implements OnInit, OnDestroy {
     this.subs.add(this.datasetService.getCentraleInfos(nom).subscribe(infos => {
       if (nom !== this.centraleName) return; // réponse d'une centrale précédente
       this.infos = infos;
+      // Par défaut : dernière année complète (antérieure à l'année de génération du fichier),
+      // sinon la dernière année disponible.
       const annees = this.anneesArrets();
-      this.anneeArrets = annees.length ? annees[annees.length - 1] : null;
+      const enCours = this.anneeEnCours();
+      const completes = enCours ? annees.filter(a => a < enCours) : annees;
+      this.anneeArrets = completes.length ? completes[completes.length - 1]
+                       : annees.length ? annees[annees.length - 1] : null;
     }));
   }
 
@@ -271,14 +276,36 @@ export class CentraleComponent implements OnInit, OnDestroy {
     return [...annees].sort();
   }
 
+  /** Année en cours au moment de la génération du fichier (ex. "2026"), null si inconnue. */
+  anneeEnCours(): string | null {
+    return this.infos?.meta?.genere_le?.substring(0, 4) ?? null;
+  }
+
+  /** Vrai si l'année choisie est l'année en cours (données partielles). */
+  anneePartielle(): boolean {
+    const enCours = this.anneeEnCours();
+    return !!enCours && this.anneeArrets === enCours;
+  }
+
+  /** Format court de date selon la langue (FR : JJ/MM/AAAA). */
+  formatDateCourt(): string {
+    return this.translate.currentLang === 'en' ? 'MMM d, y' : 'dd/MM/yyyy';
+  }
+
   onAnneeArrets(event: Event): void {
     this.anneeArrets = (event.target as HTMLSelectElement).value;
   }
 
-  /** Valeur d'un indicateur annuel pour l'année choisie (null si inconnue). */
+  /** Nombre d'arrêts d'une tranche pour l'année choisie (null si inconnu). */
   valeurAnnee(serie: FicheTranche['arrets_par_an'], annee: string | null): number | null {
     if (!serie || !annee) return null;
     return serie[annee] ?? null;
+  }
+
+  /** Jours d'arrêt d'un type pour l'année choisie (null si inconnu). */
+  joursAnnee(t: FicheTranche, annee: string | null, type: 'planned' | 'fortuitous' | 'total'): number | null {
+    if (!t.jours_arret || !annee) return null;
+    return t.jours_arret[annee]?.[type] ?? null;
   }
 
   /** Clé de suivi *ngFor des tranches de la fiche. */
