@@ -156,7 +156,31 @@
       "AVAILABILITY_TITLE": "Disponibilité des tranches",
       "MW": "MW",
       "CLICK_FOR_DETAILS": "Cliquer pour voir les détails",
-      "LOADING": "Chargement des données..."
+      "LOADING": "Chargement des données...",
+      "FICHE": {
+        "TITLE": "Fiche de la centrale",
+        "SUMMARY": "Résumé",
+        "INSTALLED_POWER_TOTAL": "Puissance installée totale",
+        "NB_UNITS": "Nombre de tranches",
+        "FIRST_COMMISSIONING": "Mise en service du premier réacteur",
+        "SECONDARY_RESERVE_TOTAL": "Réserve secondaire totale",
+        "LOCATION": "Commune / Département / Région",
+        "UNITS_DETAIL": "Détail par tranche",
+        "INSTALLED_POWER": "Puissance installée",
+        "MIN_DESIGN_POWER": "Puissance minimum de conception",
+        "COMMISSIONING": "Mise en service industrielle",
+        "SECONDARY_RESERVE": "Réserve secondaire maximale",
+        "PALIER": "Palier",
+        "CO2": "Émissions de CO₂",
+        "CO2_UNIT": "t/an",
+        "OUTAGES": "Arrêts",
+        "YEAR": "Année",
+        "OUTAGES_COUNT": "arrêts",
+        "DAYS": "jours d'arrêt",
+        "NOT_AVAILABLE": "Non disponible",
+        "SOURCE": "Source",
+        "RETRIEVED_ON": "récupéré le {{date}}"
+      }
     },
     "ERROR": {
       "PAGE_NOT_FOUND": "Page introuvable",
