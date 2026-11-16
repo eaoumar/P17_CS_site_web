@@ -14,7 +14,7 @@
           <span class="time">{{ selectedHour | number:'2.0' }}:00</span>
         </div>
       </div>
-      <button class="close-btn" (click)="close()" aria-label="Fermer">
+      <button class="close-btn" (click)="close()" [attr.aria-label]="'CENTRALE.CLOSE' | translate">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M18 6L6 18M6 6l12 12"/>
         </svg>
@@ -48,5 +48,152 @@
         </div>
       </ng-template>
     </div>
+
+    <!-- ─── Fiche de la centrale (Groupe 1, assets/centrales_infos.json) ───
+         Règle : toute valeur null/absente → « Non disponible », jamais 0 ni vide.
+         Rien n'est affiché tant que la fiche n'est pas chargée. -->
+    <div class="fiche-centrale" *ngIf="infos">
+      <div class="section-header">
+        <h4>
+          <button type="button" class="fiche-toggle" (click)="toggleFiche()"
+                  [attr.aria-expanded]="ficheOuverte" aria-controls="fiche-centrale-contenu">
+            {{ 'CENTRALE.FICHE.TITLE' | translate }}
+            <svg class="fiche-chevron" [class.ouvert]="ficheOuverte" width="18" height="18" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+        </h4>
+      </div>
+
+      <div id="fiche-centrale-contenu" class="fiche-contenu" *ngIf="ficheOuverte">
+
+        <!-- Résumé de la centrale -->
+        <div class="fiche-bloc">
+          <h5 class="fiche-bloc-titre">{{ 'CENTRALE.FICHE.SUMMARY' | translate }}</h5>
+          <dl class="fiche-grid">
+            <div class="fiche-row">
+              <dt>{{ 'CENTRALE.FICHE.INSTALLED_POWER_TOTAL' | translate }}</dt>
+              <dd><ng-container *ngTemplateOutlet="mw; context: { $implicit: infos.resume?.puissance_installee_mw }"></ng-container></dd>
+            </div>
+            <div class="fiche-row">
+              <dt>{{ 'CENTRALE.FICHE.NB_UNITS' | translate }}</dt>
+              <dd><ng-container *ngTemplateOutlet="nombre; context: { $implicit: infos.resume?.nb_tranches }"></ng-container></dd>
+            </div>
+            <div class="fiche-row">
+              <dt>{{ 'CENTRALE.FICHE.FIRST_COMMISSIONING' | translate }}</dt>
+              <dd><ng-container *ngTemplateOutlet="dateVal; context: { $implicit: infos.resume?.premiere_mise_en_service }"></ng-container></dd>
+            </div>
+            <div class="fiche-row">
+              <dt>{{ 'CENTRALE.FICHE.SECONDARY_RESERVE_TOTAL' | translate }}</dt>
+              <dd><ng-container *ngTemplateOutlet="mw; context: { $implicit: infos.resume?.reserve_secondaire_max_mw }"></ng-container></dd>
+            </div>
+            <div class="fiche-row">
+              <dt>{{ 'CENTRALE.FICHE.LOCATION' | translate }}</dt>
+              <dd>
+                <ng-container *ngTemplateOutlet="texte; context: { $implicit: localisation().commune }"></ng-container> /
+                <ng-container *ngTemplateOutlet="texte; context: { $implicit: localisation().departement }"></ng-container> /
+                <ng-container *ngTemplateOutlet="texte; context: { $implicit: localisation().region }"></ng-container>
+              </dd>
+            </div>
+          </dl>
+          <ng-container *ngTemplateOutlet="source; context: { $implicit: infos.resume?.sources?.caracteristiques }"></ng-container>
+        </div>
+
+        <!-- Détail par tranche -->
+        <div class="fiche-bloc">
+          <h5 class="fiche-bloc-titre">{{ 'CENTRALE.FICHE.UNITS_DETAIL' | translate }}</h5>
+          <div class="data-list" *ngIf="infos.tranches.length; else ndBloc">
+            <div class="tranche-item fiche-tranche" *ngFor="let t of infos.tranches; trackBy: trackTranche">
+              <div class="tranche-info">
+                <span class="tranche-name">{{ t.nom }}</span>
+              </div>
+              <dl class="fiche-grid">
+                <div class="fiche-row">
+                  <dt>{{ 'CENTRALE.FICHE.INSTALLED_POWER' | translate }}</dt>
+                  <dd><ng-container *ngTemplateOutlet="mw; context: { $implicit: t.puissance_installee_mw }"></ng-container></dd>
+                </div>
+                <div class="fiche-row">
+                  <dt>{{ 'CENTRALE.FICHE.MIN_DESIGN_POWER' | translate }}</dt>
+                  <dd><ng-container *ngTemplateOutlet="mw; context: { $implicit: t.puissance_min_conception_mw }"></ng-container></dd>
+                </div>
+                <div class="fiche-row">
+                  <dt>{{ 'CENTRALE.FICHE.COMMISSIONING' | translate }}</dt>
+                  <dd><ng-container *ngTemplateOutlet="dateVal; context: { $implicit: t.date_mise_en_service }"></ng-container></dd>
+                </div>
+                <div class="fiche-row">
+                  <dt>{{ 'CENTRALE.FICHE.SECONDARY_RESERVE' | translate }}</dt>
+                  <dd><ng-container *ngTemplateOutlet="mw; context: { $implicit: t.reserve_secondaire_max_mw }"></ng-container></dd>
+                </div>
+                <div class="fiche-row">
+                  <dt>{{ 'CENTRALE.FICHE.PALIER' | translate }}</dt>
+                  <dd><ng-container *ngTemplateOutlet="texte; context: { $implicit: t.palier }"></ng-container></dd>
+                </div>
+                <!-- CO2 : ligne affichée seulement quand la valeur existe -->
+                <div class="fiche-row" *ngIf="estConnue(t.co2_t_par_an)">
+                  <dt>{{ 'CENTRALE.FICHE.CO2' | translate }}</dt>
+                  <dd>{{ t.co2_t_par_an | number:'1.0-0':translate.currentLang }} {{ 'CENTRALE.FICHE.CO2_UNIT' | translate }}</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+          <ng-container *ngTemplateOutlet="source; context: { $implicit: sourceTranches() }"></ng-container>
+        </div>
+
+        <!-- Arrêts (prévu : null tant que les indicateurs ne sont pas calculés) -->
+        <div class="fiche-bloc">
+          <div class="fiche-bloc-header">
+            <h5 class="fiche-bloc-titre">{{ 'CENTRALE.FICHE.OUTAGES' | translate }}</h5>
+            <label class="fiche-annee">
+              {{ 'CENTRALE.FICHE.YEAR' | translate }}
+              <select [disabled]="!anneesArrets().length" (change)="onAnneeArrets($event)">
+                <option *ngIf="!anneesArrets().length" value="">{{ 'CENTRALE.FICHE.NOT_AVAILABLE' | translate }}</option>
+                <option *ngFor="let a of anneesArrets()" [value]="a" [selected]="a === anneeArrets">{{ a }}</option>
+              </select>
+            </label>
+          </div>
+          <dl class="fiche-grid" *ngIf="anneesArrets().length; else ndBloc">
+            <div class="fiche-row" *ngFor="let t of infos.tranches; trackBy: trackTranche">
+              <dt>{{ t.nom }}</dt>
+              <dd>
+                <ng-container *ngTemplateOutlet="nombre; context: { $implicit: valeurAnnee(t.arrets_par_an, anneeArrets) }"></ng-container>
+                {{ 'CENTRALE.FICHE.OUTAGES_COUNT' | translate }} ·
+                <ng-container *ngTemplateOutlet="nombre; context: { $implicit: valeurAnnee(t.jours_arret, anneeArrets) }"></ng-container>
+                {{ 'CENTRALE.FICHE.DAYS' | translate }}
+              </dd>
+            </div>
+          </dl>
+          <ng-container *ngTemplateOutlet="source; context: { $implicit: sourceArrets() }"></ng-container>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── Gabarits d'affichage des valeurs ─── -->
+    <ng-template #nd><span class="fiche-nd">{{ 'CENTRALE.FICHE.NOT_AVAILABLE' | translate }}</span></ng-template>
+    <ng-template #ndBloc><p class="fiche-nd">{{ 'CENTRALE.FICHE.NOT_AVAILABLE' | translate }}</p></ng-template>
+
+    <ng-template #mw let-v>
+      <ng-container *ngIf="estConnue(v); else nd">{{ v | number:'1.0-0':translate.currentLang }} {{ 'CENTRALE.MW' | translate }}</ng-container>
+    </ng-template>
+    <ng-template #nombre let-v>
+      <ng-container *ngIf="estConnue(v); else nd">{{ v | number:'1.0-0':translate.currentLang }}</ng-container>
+    </ng-template>
+    <ng-template #dateVal let-v>
+      <ng-container *ngIf="estConnue(v); else nd">{{ v | date:'longDate':undefined:translate.currentLang }}</ng-container>
+    </ng-template>
+    <ng-template #texte let-v>
+      <ng-container *ngIf="estConnue(v); else nd">{{ v }}</ng-container>
+    </ng-template>
+
+    <!-- Lien « Source » d'un bloc : nouvel onglet + date de récupération -->
+    <ng-template #source let-s>
+      <p class="fiche-source" *ngIf="s">
+        <a *ngIf="s.url; else sourceTexte" [href]="s.url" target="_blank" rel="noopener noreferrer" [title]="s.texte">
+          {{ 'CENTRALE.FICHE.SOURCE' | translate }}
+        </a>
+        <ng-template #sourceTexte>{{ 'CENTRALE.FICHE.SOURCE' | translate }} : {{ s.texte }}</ng-template>
+        <span *ngIf="s.date"> · {{ 'CENTRALE.FICHE.RETRIEVED_ON' | translate:{ date: (s.date | date:'longDate':undefined:translate.currentLang) } }}</span>
+      </p>
+    </ng-template>
   </div>
 </div>

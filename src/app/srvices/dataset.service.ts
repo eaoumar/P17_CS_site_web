@@ -24,6 +24,50 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, combineLatest, of } from 'rxjs';
 import { catchError, map, shareReplay } from 'rxjs/operators';
 
+// ─── Types de la fiche centrale (assets/centrales_infos.json, Groupe 1) ──────
+// Toute valeur inconnue vaut null dans le JSON : l'interface affiche alors
+// « Non disponible », jamais 0.
+
+/** Source d'un bloc de données, découpée pour l'affichage (lien + date). */
+export interface SourceInfo {
+  texte: string;        // texte complet tel qu'écrit dans le JSON
+  url: string | null;   // page de la source (null si non trouvée dans le texte)
+  date: string | null;  // date de récupération AAAA-MM-JJ (null si absente)
+}
+
+/** Indicateur annuel : { "2024": 3, ... }. null tant que non calculé. */
+export type ParAnnee = Record<string, number | null> | null;
+
+export interface FicheTranche {
+  nom: string;          // nom du réacteur (identique à units.json)
+  centrale: string;
+  puissance_installee_mw: number | null;
+  puissance_min_conception_mw: number | null;
+  date_mise_en_service: string | null;
+  reserve_secondaire_max_mw: number | null;
+  palier: string | null;
+  commune: string | null;
+  departement: string | null;
+  region: string | null;
+  co2_t_par_an: number | null;
+  arrets_par_an: ParAnnee;
+  jours_arret: ParAnnee;
+  sources: { caracteristiques: SourceInfo | null; indicateurs: SourceInfo | null };
+}
+
+export interface ResumeCentrale {
+  nb_tranches: number | null;
+  puissance_installee_mw: number | null;
+  premiere_mise_en_service: string | null;
+  reserve_secondaire_max_mw: number | null;
+  sources: { nb_tranches: string | null; caracteristiques: SourceInfo | null };
+}
+
+export interface CentraleInfos {
+  resume: ResumeCentrale | null;   // null si la centrale est absente du fichier
+  tranches: FicheTranche[];
+}
+
 // @Injectable({ providedIn: 'root' }) : Angular instancie ce service
 // une seule fois pour toute l'application (singleton). Tous les
 // composants qui l'injectent partagent donc la même instance et
@@ -47,8 +91,15 @@ export class DatasetService {
   private events$:       Observable<any[]>;   // événements bruts (events.json)
   private units$:        Observable<any[]>;   // réacteurs + GPS (units.json)
   private indexedEvents$: Observable<Map<string, {b:number, e:number, a:number}[]>>;
+  private infos$:        Observable<Record<string, any>>;   // fiches centrales (centrales_infos.json)
 
   constructor(private http: HttpClient) {
+    // catchError avant shareReplay : en cas d'échec, {} est mis en cache
+    // (pas de nouvelle requête à chaque ouverture du panneau).
+    this.infos$ = this.http.get<Record<string, any>>('assets/centrales_infos.json').pipe(
+      catchError(() => of({})),
+      shareReplay(1)
+    );
     this.allData$   = this.http.get<any[]>(this.baseUrl).pipe(shareReplay(1));
     this.dailyData$ = this.http.get<any[]>(this.dailyUrl).pipe(shareReplay(1));
     this.events$    = this.http.get<any[]>('assets/events.json').pipe(shareReplay(1), catchError(() => of([])));
@@ -421,6 +472,52 @@ export class DatasetService {
         return { series, nominalSeries };
       })
     );
+  }
+
+  // ─── Fiche centrale (Groupe 1) ──────────────────────────────────────────────
+
+  /**
+   * Fiche d'une centrale : résumé (_centrales[nom]) + fiche de chaque tranche.
+   * nomCentrale est le nom de units.json (ex. "ST LAURENT"), identique aux
+   * clés de _centrales et au champ "centrale" des tranches.
+   * Si le fichier est absent ou la centrale inconnue : resume = null, tranches = [].
+   */
+  getCentraleInfos(nomCentrale: string): Observable<CentraleInfos> {
+    return this.infos$.pipe(
+      map(infos => {
+        const brut = infos?.['_centrales']?.[nomCentrale];
+        const resume: ResumeCentrale | null = brut
+          ? { ...brut, sources: {
+                nb_tranches: brut.sources?.nb_tranches ?? null,
+                caracteristiques: this.parseSource(brut.sources?.caracteristiques) } }
+          : null;
+
+        const tranches: FicheTranche[] = Object.entries(infos ?? {})
+          .filter(([nom, f]: [string, any]) => nom !== '_centrales' && f?.centrale === nomCentrale)
+          .map(([nom, f]: [string, any]) => ({
+            ...f,
+            nom,
+            sources: {
+              caracteristiques: this.parseSource(f.sources?.caracteristiques),
+              indicateurs:      this.parseSource(f.sources?.indicateurs)
+            }
+          }))
+          .sort((a, b) => a.nom.localeCompare(b.nom, 'fr', { numeric: true }));
+
+        return { resume, tranches };
+      })
+    );
+  }
+
+  /**
+   * Découpe un texte de source du type
+   * "Titre (https://…), récupéré le AAAA-MM-JJ" en { texte, url, date }.
+   */
+  private parseSource(texte: string | null | undefined): SourceInfo | null {
+    if (!texte) return null;
+    const url  = texte.match(/https?:\/\/[^\s)]+/)?.[0] ?? null;
+    const date = texte.match(/(\d{4}-\d{2}-\d{2})\s*$/)?.[1] ?? null;
+    return { texte, url, date };
   }
 
   /** Liste de tous les réacteurs connus (pour les listes déroulantes). */
