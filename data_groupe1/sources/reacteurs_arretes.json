@@ -1,0 +1,28 @@
+{
+  "FESSENHEIM 1": {
+    "puissance_installee_mw": 880,
+    "date_mise_en_service": "1978-01-01",
+    "date_arret_definitif": "2020-02-22",
+    "palier": "REP 900 (CP0)",
+    "commune": "Fessenheim",
+    "departement": "Haut-Rhin",
+    "region": "Grand Est",
+    "puissance_min_conception_mw": null,
+    "reserve_secondaire_max_mw": null
+  },
+  "FESSENHEIM 2": {
+    "puissance_installee_mw": 880,
+    "date_mise_en_service": "1978-04-01",
+    "date_arret_definitif": "2020-06-30",
+    "palier": "REP 900 (CP0)",
+    "commune": "Fessenheim",
+    "departement": "Haut-Rhin",
+    "region": "Grand Est",
+    "puissance_min_conception_mw": null,
+    "reserve_secondaire_max_mw": null
+  },
+  "_sources": {
+    "caracteristiques": "AIEA, Power Reactor Information System (PRIS), fiches FESSENHEIM-1 et FESSENHEIM-2 (https://pris.iaea.org/PRIS/CountryStatistics/ReactorDetails.aspx?current=163 et current=164) : puissance nette et date de mise en service commerciale, consulté le 2026-11-16",
+    "arret_definitif": "Décret n° 2020-129 du 18 février 2020 (https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000041600975) ; arrêts du 22/02/2020 et du 29-30/06/2020"
+  }
+}

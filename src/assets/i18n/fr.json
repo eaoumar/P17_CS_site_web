@@ -180,6 +180,7 @@
         "FORCED_DAYS": "fortuits :",
         "DAY_UNIT": "j",
         "PARTIAL_DATA": "Données partielles, jusqu'au {{date}}",
+        "SHUTDOWN_ON": "Arrêté définitivement le {{date}}",
         "OUTAGES_METHOD": "Un arrêt correspond à une période où la puissance disponible déclarée est nulle. Source : indisponibilités publiées par EDF.",
         "NOT_AVAILABLE": "Non disponible",
         "SOURCE": "Source",

@@ -108,6 +108,13 @@
               <div class="tranche-info">
                 <span class="tranche-name">{{ t.nom }}</span>
               </div>
+              <!-- Réacteur arrêté : date d'arrêt définitif, avec sa propre source (décret) -->
+              <p class="fiche-arret" *ngIf="t.date_arret_definitif">
+                {{ 'CENTRALE.FICHE.SHUTDOWN_ON' | translate:{ date: (t.date_arret_definitif | date:formatDateCourt():undefined:translate.currentLang) } }}
+                <a *ngIf="t.sources.arret_definitif?.url" [href]="t.sources.arret_definitif?.url"
+                   target="_blank" rel="noopener noreferrer" [title]="t.sources.arret_definitif?.texte">
+                  {{ 'CENTRALE.FICHE.SOURCE' | translate }}</a>
+              </p>
               <dl class="fiche-grid">
                 <div class="fiche-row">
                   <dt>{{ 'CENTRALE.FICHE.INSTALLED_POWER' | translate }}</dt>

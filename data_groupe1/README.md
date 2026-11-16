@@ -34,7 +34,7 @@ Chaque téléchargement est enregistré dans `data_groupe1/cache/`, qui n'est pa
 Colonnes de `correspondance_reacteurs.csv` :
 
 - `centrale`, `tranche`, `nom_units_json` : noms utilisés par le site, issus de `units.json`.
-- `nom_edf_opendata` : champ `tranche` du jeu OpenData EDF. Il est vide pour FESSENHEIM 1 et 2, qui sont absents de ce jeu.
+- `nom_edf_opendata` : champ `tranche` du jeu OpenData EDF. Il est vide pour FESSENHEIM 1 et 2, qui sont absents de ce jeu. Leurs caractéristiques viennent de `sources/reacteurs_arretes.json`.
 - `unit_name_api_indispo` : champ `unit_name` de l'API indisponibilités. Vérifié le 2026-11-16 : les 59 noms sont identiques à `nom_units_json`. Le script refait cette vérification à chaque exécution quand le token est disponible.
 - `nom_rte_production` : vide, à remplir avec le Groupe 2.
 
@@ -96,7 +96,9 @@ Champs par réacteur :
 | `arrets_par_an` | API indisponibilités EDF (token) | `{"2024": 3, …}` : nombre d'arrêts ayant au moins une partie dans l'année (voir la méthode plus bas) |
 | `jours_arret` | API indisponibilités EDF | `{"2024": {"planned": 80.0, "fortuitous": 1.0, "total": 81.0}, …}` |
 | `planifie_futur` | API indisponibilités EDF | Arrêts publiés à venir : `[{"type", "debut", "fin", "jours"}]` |
-| `arret_definitif` | API indisponibilités EDF | Date de mise à l'arrêt définitive (Fessenheim), sinon `null` |
+| `statut` | Calculé | `"arrêté définitivement"` si `date_arret_definitif` est renseignée, sinon `"en service"` |
+| `date_arret_definitif` | `sources/reacteurs_arretes.json` (décret) | Date de l'arrêt définitif, `null` pour les réacteurs en service |
+| `sources.arret_definitif` | | Source de la date d'arrêt (décret), `null` pour les réacteurs en service |
 | `sources.indicateurs` | | « Calcul P17 à partir des indisponibilités EDF (… — URL), récupéré le AAAA-MM-JJ » |
 
 La clé `_meta_indicateurs` décrit le calcul. Elle contient :
@@ -121,7 +123,24 @@ La clé `_meta_indicateurs` décrit le calcul. Elle contient :
 5. **Découpage par année :** au 1er janvier à 00:00, heure de Paris. Un arrêt à cheval sur deux années compte une fois dans chacune.
 6. **Passé et futur :** ce qui précède la date de calcul va dans les années. La suite va dans `planifie_futur`.
 7. **Années couvertes :** de 2015 jusqu'à l'année en cours, qui est partielle. Les premières publications datent du 2014-12-16. Un réacteur récent commence à l'année de sa première indisponibilité (FLAMANVILLE 3 : 2024).
-8. **Arrêt définitif :** une indisponibilité qui se termine après 2090 est traitée comme une mise à l'arrêt définitive. C'est le cas de Fessenheim, dont la fin est publiée au 2099-12-31. Le calcul s'arrête à cette date, sans arrêt futur ni année ultérieure.
+8. **Arrêt définitif :** une indisponibilité qui se termine après 2090 est traitée comme une mise à l'arrêt définitive. C'est le cas de Fessenheim, dont la fin est publiée au 2099-12-31. Le calcul s'arrête à cette date, sans arrêt futur ni année ultérieure. Le script compare cette date à `date_arret_definitif` (fichier des réacteurs arrêtés) et affiche un avertissement si elles diffèrent. Au 2026-11-16, elles concordent : 2020-02-22 et 2020-06-30.
+
+### Réacteurs arrêtés absents de l'OpenData EDF (`sources/reacteurs_arretes.json`)
+
+Le jeu OpenData EDF ne contient que les réacteurs en service. Pour FESSENHEIM 1 et 2, les caractéristiques viennent d'un fichier **saisi à la main et versionné**, `data_groupe1/sources/reacteurs_arretes.json`. Sa clé `_sources` contient la source de chaque type de valeur.
+
+- **Utilisation :** le fichier ne sert que pour les réacteurs **absents** de l'OpenData EDF, et ne remplit que les champs encore vides. Une valeur EDF n'est jamais écrasée.
+- **Sources :**
+  - caractéristiques : AIEA, Power Reactor Information System (PRIS). C'est la source citée dans `sources.caracteristiques` de ces réacteurs ;
+  - date d'arrêt définitif : décret n° 2020-129 du 18 février 2020 (Légifrance), cité dans `sources.arret_definitif`.
+- **Champs restés `null` :** `puissance_min_conception_mw` et `reserve_secondaire_max_mw`, faute de source.
+- **Définition des dates :**
+  - `date_mise_en_service` désigne, pour les réacteurs EDF, la **date de mise en service industrielle**. Pour les réacteurs du fichier, c'est la **date de mise en service commerciale** de PRIS (*commercial operation*). Ces deux notions sont proches mais ne viennent pas de la même source, et le panneau les affiche sous le même libellé.
+  - `date_arret_definitif` est la date d'arrêt définitif retenue par le décret : 22/02/2020 pour le réacteur 1, 30/06/2020 pour le réacteur 2.
+- **Palier :** il est écrit « REP 900 (CP0) », plus précis que le « REP 900 » tiré des données EDF.
+- **Vérification au 2026-11-16 :**
+  - le décret et ses deux dates sont confirmés sur Légifrance ;
+  - les liens PRIS `ReactorDetails.aspx?current=163/164` redirigent vers l'accueil du nouveau site PRIS, qui ne se lit qu'en JavaScript. Les valeurs ont été recoupées avec la base de la World Nuclear Association, qui cite PRIS : 880 MWe nets, mise en service commerciale le 1978-01-01 et le 1978-04-01.
 9. **Contrôle :** si un total annuel dépasse la durée de l'année (365 ou 366 jours), le script s'arrête sans écrire le fichier.
 
 Champs de `_centrales` :
@@ -134,7 +153,7 @@ Champs de `_centrales` :
 
 ### Valeurs `null` connues (état au 2026-11-16)
 
-- **FESSENHEIM 1 et 2 :** tous les champs sont `null` sauf `centrale`, car ils sont absents du jeu EDF (centrale arrêtée). Côté `_centrales`, FESSENHEIM n'a que `nb_tranches = 2`.
+- **FESSENHEIM 1 et 2 :** `puissance_min_conception_mw` et `reserve_secondaire_max_mw` sont `null`. Les autres caractéristiques viennent du fichier des réacteurs arrêtés (PRIS). Côté `_centrales.FESSENHEIM`, la puissance installée (1 760 MW) et la première mise en service (1978-01-01) sont renseignées, mais la réserve secondaire reste `null`.
 - **FLAMANVILLE 3 :** `puissance_min_conception_mw` et `reserve_secondaire_max_mw` sont `null`, car le jeu EDF ne les renseigne pas. Par conséquent, `_centrales.FLAMANVILLE.reserve_secondaire_max_mw` est aussi `null`.
 - **Tous les réacteurs :** `co2_t_par_an` est `null`.
 - **Indicateurs d'arrêts :** ils sont calculés pour les 59 réacteurs. Une année hors de la plage couverte par un réacteur n'a pas de valeur, et le site affiche alors « Non disponible ».

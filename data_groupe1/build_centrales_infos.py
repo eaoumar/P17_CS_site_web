@@ -50,6 +50,12 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 UNITS_JSON = ROOT / "src" / "assets" / "units.json"
 CORRESPONDANCE_CSV = HERE / "correspondance_reacteurs.csv"
+# Réacteurs arrêtés absents de l'OpenData EDF : valeurs saisies à la main, sourcées.
+REACTEURS_ARRETES_JSON = HERE / "sources" / "reacteurs_arretes.json"
+CHAMPS_CARAC = (
+    "puissance_installee_mw", "puissance_min_conception_mw", "date_mise_en_service",
+    "reserve_secondaire_max_mw", "palier", "commune", "departement", "region",
+)
 OUT_JSON = ROOT / "src" / "assets" / "centrales_infos.json"
 
 COL_RESERVE = "_reserves_secondaires-par-tranche.reserve_secondaire_maximale"
@@ -281,6 +287,11 @@ def construire():
     indicateurs, meta_ind = calculer_indicateurs(
         {nom: ligne["unit_name_api_indispo"] for nom, ligne in corresp.items()})
 
+    # Réacteurs arrêtés (fichier versionné, saisi à la main)
+    with open(REACTEURS_ARRETES_JSON, encoding="utf-8") as f:
+        arretes = json.load(f)
+    sources_arretes = arretes.get("_sources", {})
+
     reacteurs = {}
     ecarts = []
     for u in units:
@@ -305,24 +316,37 @@ def construire():
             p_edf, p_units = fiche["puissance_installee_mw"], propre(u.get("nominal"))
             if p_edf is not None and p_units is not None and p_edf != p_units:
                 ecarts.append((nom, p_edf, p_units))
+            src_carac = source_carac
         else:
-            # Pas d'équivalent OpenData EDF (ex. Fessenheim) : rien d'inventé.
-            fiche = {k: None for k in (
-                "puissance_installee_mw", "puissance_min_conception_mw",
-                "date_mise_en_service", "reserve_secondaire_max_mw",
-                "palier", "commune", "departement", "region",
-            )}
-            fiche = {"centrale": u["centrale"], **fiche}
+            # Pas d'équivalent OpenData EDF : rien d'inventé. On ne complète qu'à
+            # partir du fichier des réacteurs arrêtés (valeurs sourcées).
+            fiche = {"centrale": u["centrale"], **{k: None for k in CHAMPS_CARAC}}
+            src_carac = None
+            manuel = arretes.get(nom)
+            if manuel:
+                for k in CHAMPS_CARAC:
+                    if fiche[k] is None and manuel.get(k) is not None:  # jamais d'écrasement
+                        fiche[k] = manuel[k]
+                src_carac = sources_arretes.get("caracteristiques")
 
+        # Statut : arrêt définitif uniquement depuis le fichier sourcé (décret).
+        manuel = arretes.get(nom) or {}
+        date_arret = manuel.get("date_arret_definitif")
         ind = indicateurs.get(nom, {})
+        if date_arret and ind.get("arret_definitif") and ind["arret_definitif"] != date_arret:
+            print(f"AVERTISSEMENT : {nom} arrêt définitif {date_arret} (fichier) "
+                  f"≠ {ind['arret_definitif']} (indisponibilités EDF)")
+
         fiche.update({
+            "statut": "arrêté définitivement" if date_arret else "en service",
+            "date_arret_definitif": date_arret,
             "co2_t_par_an": None,  # source à définir
             "arrets_par_an": ind.get("arrets_par_an"),
             "jours_arret": ind.get("jours_arret"),
             "planifie_futur": ind.get("planifie_futur"),
-            "arret_definitif": ind.get("arret_definitif"),
             "sources": {
-                "caracteristiques": source_carac if rec is not None else None,
+                "caracteristiques": src_carac,
+                "arret_definitif": sources_arretes.get("arret_definitif") if date_arret else None,
                 "indicateurs": ind.get("source"),
             },
         })
@@ -332,7 +356,10 @@ def construire():
     centrales = {}
     for nom_c in sorted({f["centrale"] for f in reacteurs.values()}):
         fiches = [f for f in reacteurs.values() if f["centrale"] == nom_c]
-        connues = all(f["sources"]["caracteristiques"] for f in fiches)
+        srcs = [f["sources"]["caracteristiques"] for f in fiches]
+        connues = all(srcs)
+        # Source des agrégats = la ou les sources réellement utilisées par les tranches.
+        src_c = " ; ".join(dict.fromkeys(srcs)) if connues else None
         centrales[nom_c] = {
             "nb_tranches": len(fiches),
             "puissance_installee_mw": somme_ou_null([f["puissance_installee_mw"] for f in fiches]),
@@ -340,7 +367,7 @@ def construire():
             "reserve_secondaire_max_mw": somme_ou_null([f["reserve_secondaire_max_mw"] for f in fiches]),
             "sources": {
                 "nb_tranches": "src/assets/units.json",
-                "caracteristiques": (f"Calculé à partir de : {source_carac}" if connues else None),
+                "caracteristiques": (f"Calculé à partir de : {src_c}" if connues else None),
             },
         }
 

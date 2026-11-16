@@ -376,6 +376,21 @@
   }
 }
 
+.fiche-arret {
+  margin: -4px 0 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+
+  a {
+    margin-left: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #3e4bff;
+    text-decoration: underline;
+  }
+}
+
 .fiche-partiel {
   margin: 0;
   font-size: 13px;

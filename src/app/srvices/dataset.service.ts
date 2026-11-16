@@ -68,8 +68,9 @@ export interface FicheTranche {
   arrets_par_an: ParAnnee;
   jours_arret: Record<string, JoursArret | null> | null;
   planifie_futur: ArretFutur[] | null;
-  arret_definitif: string | null;
-  sources: { caracteristiques: SourceInfo | null; indicateurs: SourceInfo | null };
+  statut: 'en service' | 'arrêté définitivement' | null;
+  date_arret_definitif: string | null;   // AAAA-MM-JJ, null si en service
+  sources: { caracteristiques: SourceInfo | null; arret_definitif: SourceInfo | null; indicateurs: SourceInfo | null };
 }
 
 export interface ResumeCentrale {
@@ -523,6 +524,7 @@ export class DatasetService {
             nom,
             sources: {
               caracteristiques: this.parseSource(f.sources?.caracteristiques),
+              arret_definitif:  this.parseSource(f.sources?.arret_definitif),
               indicateurs:      this.parseSource(f.sources?.indicateurs)
             }
           }))

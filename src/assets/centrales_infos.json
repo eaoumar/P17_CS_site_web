@@ -9,6 +9,8 @@
     "commune": "Belleville-sur-Loire",
     "departement": "CHER",
     "region": "CENTRE-VAL DE LOIRE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 2,
@@ -94,9 +96,9 @@
         "jours": 103.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -110,6 +112,8 @@
     "commune": "Belleville-sur-Loire",
     "departement": "CHER",
     "region": "CENTRE-VAL DE LOIRE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 5,
@@ -201,9 +205,9 @@
         "jours": 196.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -217,6 +221,8 @@
     "commune": "Braud-et-Saint-Louis",
     "departement": "GIRONDE",
     "region": "NOUVELLE-AQUITAINE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 3,
@@ -314,9 +320,9 @@
         "jours": 95.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -330,6 +336,8 @@
     "commune": "Braud-et-Saint-Louis",
     "departement": "GIRONDE",
     "region": "NOUVELLE-AQUITAINE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 3,
@@ -421,9 +429,9 @@
         "jours": 40.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -437,6 +445,8 @@
     "commune": "Braud-et-Saint-Louis",
     "departement": "GIRONDE",
     "region": "NOUVELLE-AQUITAINE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 5,
@@ -534,9 +544,9 @@
         "jours": 40.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -550,6 +560,8 @@
     "commune": "Braud-et-Saint-Louis",
     "departement": "GIRONDE",
     "region": "NOUVELLE-AQUITAINE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 5,
@@ -641,9 +653,9 @@
         "jours": 40.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -657,6 +669,8 @@
     "commune": "Saint-Vulbas",
     "departement": "AIN",
     "region": "AUVERGNE-RHONE-ALPES",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 5,
@@ -748,9 +762,9 @@
         "jours": 99.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -764,6 +778,8 @@
     "commune": "Saint-Vulbas",
     "departement": "AIN",
     "region": "AUVERGNE-RHONE-ALPES",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 6,
@@ -855,9 +871,9 @@
         "jours": 47.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -871,6 +887,8 @@
     "commune": "Saint-Vulbas",
     "departement": "AIN",
     "region": "AUVERGNE-RHONE-ALPES",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 8,
@@ -962,9 +980,9 @@
         "jours": 45.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -978,6 +996,8 @@
     "commune": "Saint-Vulbas",
     "departement": "AIN",
     "region": "AUVERGNE-RHONE-ALPES",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 3,
@@ -1069,9 +1089,9 @@
         "jours": 46.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -1085,6 +1105,8 @@
     "commune": "Cattenom",
     "departement": "MOSELLE",
     "region": "GRAND EST",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 4,
@@ -1176,9 +1198,9 @@
         "jours": 43.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -1192,6 +1214,8 @@
     "commune": "Cattenom",
     "departement": "MOSELLE",
     "region": "GRAND EST",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 3,
@@ -1277,9 +1301,9 @@
         "jours": 205.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -1293,6 +1317,8 @@
     "commune": "Cattenom",
     "departement": "MOSELLE",
     "region": "GRAND EST",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 4,
@@ -1378,9 +1404,9 @@
         "jours": 95.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -1394,6 +1420,8 @@
     "commune": "Cattenom",
     "departement": "MOSELLE",
     "region": "GRAND EST",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 3,
@@ -1479,9 +1507,9 @@
         "jours": 43.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -1495,6 +1523,8 @@
     "commune": "Avoine",
     "departement": "INDRE-ET-LOIRE",
     "region": "CENTRE-VAL DE LOIRE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 12,
@@ -1586,9 +1616,9 @@
         "jours": 41.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -1602,6 +1632,8 @@
     "commune": "Avoine",
     "departement": "INDRE-ET-LOIRE",
     "region": "CENTRE-VAL DE LOIRE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 10,
@@ -1699,9 +1731,9 @@
         "jours": 95.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -1715,6 +1747,8 @@
     "commune": "Avoine",
     "departement": "INDRE-ET-LOIRE",
     "region": "CENTRE-VAL DE LOIRE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 3,
@@ -1806,9 +1840,9 @@
         "jours": 40.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -1822,6 +1856,8 @@
     "commune": "Avoine",
     "departement": "INDRE-ET-LOIRE",
     "region": "CENTRE-VAL DE LOIRE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 3,
@@ -1913,9 +1949,9 @@
         "jours": 81.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -1929,6 +1965,8 @@
     "commune": "Chooz",
     "departement": "ARDENNES",
     "region": "GRAND EST",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 2,
@@ -2020,9 +2058,9 @@
         "jours": 43.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -2036,6 +2074,8 @@
     "commune": "Chooz",
     "departement": "ARDENNES",
     "region": "GRAND EST",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 2,
@@ -2127,9 +2167,9 @@
         "jours": 171.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -2143,6 +2183,8 @@
     "commune": "Civaux",
     "departement": "VIENNE",
     "region": "NOUVELLE-AQUITAINE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 11,
@@ -2234,9 +2276,9 @@
         "jours": 43.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -2250,6 +2292,8 @@
     "commune": "Civaux",
     "departement": "VIENNE",
     "region": "NOUVELLE-AQUITAINE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 5,
@@ -2341,9 +2385,9 @@
         "jours": 43.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -2357,6 +2401,8 @@
     "commune": "Cruas",
     "departement": "ARDECHE",
     "region": "AUVERGNE-RHONE-ALPES",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 6,
@@ -2454,9 +2500,9 @@
         "jours": 95.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -2470,6 +2516,8 @@
     "commune": "Cruas",
     "departement": "ARDECHE",
     "region": "AUVERGNE-RHONE-ALPES",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 6,
@@ -2561,9 +2609,9 @@
         "jours": 40.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -2577,6 +2625,8 @@
     "commune": "Cruas",
     "departement": "ARDECHE",
     "region": "AUVERGNE-RHONE-ALPES",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 6,
@@ -2674,9 +2724,9 @@
         "jours": 41.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -2690,6 +2740,8 @@
     "commune": "Cruas",
     "departement": "ARDECHE",
     "region": "AUVERGNE-RHONE-ALPES",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 9,
@@ -2787,9 +2839,9 @@
         "jours": 80.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -2803,6 +2855,8 @@
     "commune": "Dampierre-en-Burly",
     "departement": "LOIRET",
     "region": "CENTRE-VAL DE LOIRE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 4,
@@ -2894,9 +2948,9 @@
         "jours": 40.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -2910,6 +2964,8 @@
     "commune": "Dampierre-en-Burly",
     "departement": "LOIRET",
     "region": "CENTRE-VAL DE LOIRE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 6,
@@ -3001,9 +3057,9 @@
         "jours": 96.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -3017,6 +3073,8 @@
     "commune": "Dampierre-en-Burly",
     "departement": "LOIRET",
     "region": "CENTRE-VAL DE LOIRE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 2,
@@ -3114,9 +3172,9 @@
         "jours": 88.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -3130,6 +3188,8 @@
     "commune": "Dampierre-en-Burly",
     "departement": "LOIRET",
     "region": "CENTRE-VAL DE LOIRE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 2,
@@ -3227,22 +3287,24 @@
         "jours": 99.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
   "FESSENHEIM 1": {
     "centrale": "FESSENHEIM",
-    "puissance_installee_mw": null,
+    "puissance_installee_mw": 880,
     "puissance_min_conception_mw": null,
-    "date_mise_en_service": null,
+    "date_mise_en_service": "1978-01-01",
     "reserve_secondaire_max_mw": null,
-    "palier": null,
-    "commune": null,
-    "departement": null,
-    "region": null,
+    "palier": "REP 900 (CP0)",
+    "commune": "Fessenheim",
+    "departement": "Haut-Rhin",
+    "region": "Grand Est",
+    "statut": "arrêté définitivement",
+    "date_arret_definitif": "2020-02-22",
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 5,
@@ -3285,22 +3347,24 @@
       }
     },
     "planifie_futur": [],
-    "arret_definitif": "2020-02-22",
     "sources": {
-      "caracteristiques": null,
+      "caracteristiques": "AIEA, Power Reactor Information System (PRIS), fiches FESSENHEIM-1 et FESSENHEIM-2 (https://pris.iaea.org/PRIS/CountryStatistics/ReactorDetails.aspx?current=163 et current=164) : puissance nette et date de mise en service commerciale, consulté le 2026-11-16",
+      "arret_definitif": "Décret n° 2020-129 du 18 février 2020 (https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000041600975) ; arrêts du 22/02/2020 et du 29-30/06/2020",
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
   "FESSENHEIM 2": {
     "centrale": "FESSENHEIM",
-    "puissance_installee_mw": null,
+    "puissance_installee_mw": 880,
     "puissance_min_conception_mw": null,
-    "date_mise_en_service": null,
+    "date_mise_en_service": "1978-04-01",
     "reserve_secondaire_max_mw": null,
-    "palier": null,
-    "commune": null,
-    "departement": null,
-    "region": null,
+    "palier": "REP 900 (CP0)",
+    "commune": "Fessenheim",
+    "departement": "Haut-Rhin",
+    "region": "Grand Est",
+    "statut": "arrêté définitivement",
+    "date_arret_definitif": "2020-06-30",
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 8,
@@ -3343,9 +3407,9 @@
       }
     },
     "planifie_futur": [],
-    "arret_definitif": "2020-06-30",
     "sources": {
-      "caracteristiques": null,
+      "caracteristiques": "AIEA, Power Reactor Information System (PRIS), fiches FESSENHEIM-1 et FESSENHEIM-2 (https://pris.iaea.org/PRIS/CountryStatistics/ReactorDetails.aspx?current=163 et current=164) : puissance nette et date de mise en service commerciale, consulté le 2026-11-16",
+      "arret_definitif": "Décret n° 2020-129 du 18 février 2020 (https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000041600975) ; arrêts du 22/02/2020 et du 29-30/06/2020",
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -3359,6 +3423,8 @@
     "commune": "Flamanville",
     "departement": "MANCHE",
     "region": "NORMANDIE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 3,
@@ -3450,9 +3516,9 @@
         "jours": 191.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -3466,6 +3532,8 @@
     "commune": "Flamanville",
     "departement": "MANCHE",
     "region": "NORMANDIE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 4,
@@ -3557,9 +3625,9 @@
         "jours": 191.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -3573,6 +3641,8 @@
     "commune": "Flamanville",
     "departement": "MANCHE",
     "region": "NORMANDIE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2024": 2,
@@ -3593,7 +3663,7 @@
       "2026": {
         "planned": 54.1,
         "fortuitous": 26.9,
-        "total": 81.0
+        "total": 81.1
       }
     },
     "planifie_futur": [
@@ -3604,9 +3674,9 @@
         "jours": 298.3
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -3620,6 +3690,8 @@
     "commune": "Golfech",
     "departement": "TARN-ET-GARONNE",
     "region": "OCCITANIE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 2,
@@ -3705,9 +3777,9 @@
         "jours": 97.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -3721,6 +3793,8 @@
     "commune": "Golfech",
     "departement": "TARN-ET-GARONNE",
     "region": "OCCITANIE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 3,
@@ -3818,9 +3892,9 @@
         "jours": 43.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -3834,6 +3908,8 @@
     "commune": "Gravelines",
     "departement": "NORD",
     "region": "HAUTS-DE-FRANCE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 6,
@@ -3931,9 +4007,9 @@
         "jours": 40.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -3947,6 +4023,8 @@
     "commune": "Gravelines",
     "departement": "NORD",
     "region": "HAUTS-DE-FRANCE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 4,
@@ -4044,9 +4122,9 @@
         "jours": 95.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -4060,6 +4138,8 @@
     "commune": "Gravelines",
     "departement": "NORD",
     "region": "HAUTS-DE-FRANCE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 6,
@@ -4157,9 +4237,9 @@
         "jours": 102.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -4173,6 +4253,8 @@
     "commune": "Gravelines",
     "departement": "NORD",
     "region": "HAUTS-DE-FRANCE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 7,
@@ -4264,9 +4346,9 @@
         "jours": 40.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -4280,6 +4362,8 @@
     "commune": "Gravelines",
     "departement": "NORD",
     "region": "HAUTS-DE-FRANCE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 2,
@@ -4371,9 +4455,9 @@
         "jours": 83.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -4387,6 +4471,8 @@
     "commune": "Gravelines",
     "departement": "NORD",
     "region": "HAUTS-DE-FRANCE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 7,
@@ -4478,9 +4564,9 @@
         "jours": 181.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -4494,6 +4580,8 @@
     "commune": "Nogent-sur-Seine",
     "departement": "AUBE",
     "region": "GRAND EST",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 1,
@@ -4585,9 +4673,9 @@
         "jours": 43.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -4601,6 +4689,8 @@
     "commune": "Nogent-sur-Seine",
     "departement": "AUBE",
     "region": "GRAND EST",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 9,
@@ -4692,9 +4782,9 @@
         "jours": 43.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -4708,6 +4798,8 @@
     "commune": "Paluel",
     "departement": "SEINE-MARITIME",
     "region": "NORMANDIE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 9,
@@ -4799,9 +4891,9 @@
         "jours": 116.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -4815,6 +4907,8 @@
     "commune": "Paluel",
     "departement": "SEINE-MARITIME",
     "region": "NORMANDIE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 2,
@@ -4906,9 +5000,9 @@
         "jours": 48.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -4922,6 +5016,8 @@
     "commune": "Paluel",
     "departement": "SEINE-MARITIME",
     "region": "NORMANDIE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 10,
@@ -5007,9 +5103,9 @@
         "jours": 250.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -5023,6 +5119,8 @@
     "commune": "Paluel",
     "departement": "SEINE-MARITIME",
     "region": "NORMANDIE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 3,
@@ -5108,9 +5206,9 @@
         "jours": 101.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -5124,6 +5222,8 @@
     "commune": "Petit-Caux",
     "departement": "SEINE-MARITIME",
     "region": "NORMANDIE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 2,
@@ -5215,9 +5315,9 @@
         "jours": 43.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -5231,6 +5331,8 @@
     "commune": "Petit-Caux",
     "departement": "SEINE-MARITIME",
     "region": "NORMANDIE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 4,
@@ -5316,9 +5418,9 @@
         "jours": 93.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -5332,6 +5434,8 @@
     "commune": "Saint-Maurice-l'Exil",
     "departement": "ISERE",
     "region": "AUVERGNE-RHONE-ALPES",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 7,
@@ -5417,9 +5521,9 @@
         "jours": 210.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -5433,6 +5537,8 @@
     "commune": "Saint-Maurice-l'Exil",
     "departement": "ISERE",
     "region": "AUVERGNE-RHONE-ALPES",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 1,
@@ -5530,9 +5636,9 @@
         "jours": 320.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -5546,6 +5652,8 @@
     "commune": "Saint-Laurent-Nouan",
     "departement": "LOIR-ET-CHER",
     "region": "CENTRE-VAL DE LOIRE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 7,
@@ -5637,9 +5745,9 @@
         "jours": 41.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -5653,6 +5761,8 @@
     "commune": "Saint-Laurent-Nouan",
     "departement": "LOIR-ET-CHER",
     "region": "CENTRE-VAL DE LOIRE",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 2,
@@ -5744,9 +5854,9 @@
         "jours": 95.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -5760,6 +5870,8 @@
     "commune": "Saint-Paul-Trois-Châteaux",
     "departement": "DROME",
     "region": "AUVERGNE-RHONE-ALPES",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 5,
@@ -5851,9 +5963,9 @@
         "jours": 40.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -5867,6 +5979,8 @@
     "commune": "Saint-Paul-Trois-Châteaux",
     "departement": "DROME",
     "region": "AUVERGNE-RHONE-ALPES",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 2,
@@ -5958,9 +6072,9 @@
         "jours": 40.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -5974,6 +6088,8 @@
     "commune": "Saint-Paul-Trois-Châteaux",
     "departement": "DROME",
     "region": "AUVERGNE-RHONE-ALPES",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 3,
@@ -6071,9 +6187,9 @@
         "jours": 83.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -6087,6 +6203,8 @@
     "commune": "Saint-Paul-Trois-Châteaux",
     "departement": "DROME",
     "region": "AUVERGNE-RHONE-ALPES",
+    "statut": "en service",
+    "date_arret_definitif": null,
     "co2_t_par_an": null,
     "arrets_par_an": {
       "2015": 6,
@@ -6184,9 +6302,9 @@
         "jours": 40.0
       }
     ],
-    "arret_definitif": null,
     "sources": {
       "caracteristiques": "OpenData EDF — Centrales de production nucléaire d'EDF SA (https://opendata.edf.fr/datasets/centrales-de-production-nucleaire-edf), récupéré le 2026-11-16",
+      "arret_definitif": null,
       "indicateurs": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16"
     }
   },
@@ -6283,12 +6401,12 @@
     },
     "FESSENHEIM": {
       "nb_tranches": 2,
-      "puissance_installee_mw": null,
-      "premiere_mise_en_service": null,
+      "puissance_installee_mw": 1760,
+      "premiere_mise_en_service": "1978-01-01",
       "reserve_secondaire_max_mw": null,
       "sources": {
         "nb_tranches": "src/assets/units.json",
-        "caracteristiques": null
+        "caracteristiques": "Calculé à partir de : AIEA, Power Reactor Information System (PRIS), fiches FESSENHEIM-1 et FESSENHEIM-2 (https://pris.iaea.org/PRIS/CountryStatistics/ReactorDetails.aspx?current=163 et current=164) : puissance nette et date de mise en service commerciale, consulté le 2026-11-16"
       }
     },
     "FLAMANVILLE": {
@@ -6384,11 +6502,11 @@
   },
   "_meta": {
     "derniere_publication": "2026-05-07",
-    "genere_le": "2026-11-16T15:44+01:00"
+    "genere_le": "2026-11-16T16:19+01:00"
   },
   "_meta_indicateurs": {
     "source": "Calcul P17 à partir des indisponibilités EDF (OpenData EDF — Indisponibilités des moyens de production de EDF SA, API — https://opendata.edf.fr/datasets/indisponibilites-des-moyens-de-production-edf-sa), récupéré le 2026-11-16",
-    "calcule_le": "2026-11-16T15:44+01:00",
+    "calcule_le": "2026-11-16T16:19+01:00",
     "derniere_publication_api": "2026-05-07",
     "dedup": "base_id",
     "nb_evenements": 12071,

@@ -180,6 +180,7 @@
         "FORCED_DAYS": "forced:",
         "DAY_UNIT": "d",
         "PARTIAL_DATA": "Partial data, up to {{date}}",
+        "SHUTDOWN_ON": "Permanently shut down on {{date}}",
         "OUTAGES_METHOD": "An outage is a period during which the declared available capacity is zero. Source: outages published by EDF.",
         "NOT_AVAILABLE": "Not available",
         "SOURCE": "Source",
